@@ -1,0 +1,31 @@
+:host {
+    $main: brown;
+    $accent: orange;
+  
+    --color-primary: #{$main};
+    --color-secondary: #{$accent};
+  
+    display: block;
+    text-align: center;
+  }
+  
+  .pseudo-classes {
+    cursor: pointer;
+  
+    :hover {
+      $main: darken(brown, 10);
+      $accent: blue;
+  
+      --color-primary: #{$main};
+      --color-secondary: #{$accent};
+    }
+  
+    :active {
+      $main: tomato;
+      $accent: yellow;
+  
+      --color-primary: #{$main};
+      --color-secondary: #{$accent};
+    }
+  }
+  
